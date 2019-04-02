@@ -30,10 +30,10 @@ int main()
 char encrypt(char *phrase) // encoding function definition 
 {
     char i=0;
-    int key=8; //11 is the max to add, before characters are used instead of letters
+    int key;
     while(phrase[i] != NULL)
     {
-        phrase[i]=phrase[i]+key;
+        phrase[i]=phrase[i]+key;    //shifts it by the key
         printf("%c", phrase[i]);
         i++;
     }
